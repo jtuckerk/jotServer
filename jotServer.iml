@@ -10,5 +10,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="stanford-corenlp-full-2015-04-20" level="project" />
     <orderEntry type="library" name="classes" level="project" />
+    <orderEntry type="library" name="junit:junit:4.4" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents:com.springsource.org.apache.httpcomponents.httpclient-cache:4.1.1" level="project" />
+    <orderEntry type="library" name="org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2" level="project" />
   </component>
 </module>

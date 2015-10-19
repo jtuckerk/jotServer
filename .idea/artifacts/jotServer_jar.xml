@@ -1,0 +1,48 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jotServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jotServer_jar</output-path>
+    <root id="archive" name="jotServer.jar">
+      <element id="module-output" name="jotServer" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/xom.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/jollyday.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/stanford-corenlp-3.5.2-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/ejml-0.23-src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/joda-time-2.1-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/protobuf.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/jollyday-0.4.7-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/joda-time.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/javax.json-api-1.0-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/xom-1.2.10-src.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/ejml-0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/stanford-corenlp-3.5.2-models.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/stanford-corenlp-3.5.2-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/javax.json.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/stanford-corenlp-3.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/com.springsource.org.apache.httpcomponents.httpclient-cache/4.1.1/com.springsource.org.apache.httpcomponents.httpclient-cache-4.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.codec/1.4.0/com.springsource.org.apache.commons.codec-1.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.logging/1.1.1/com.springsource.org.apache.commons.logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/com.springsource.org.apache.httpcomponents.httpcore/4.1.1/com.springsource.org.apache.httpcomponents.httpcore-4.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/stanford-corenlp-3.5.2-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/javax.json-api-1.0-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/stanford-corenlp-3.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/ejml-0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/joda-time-2.1-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/xom-1.2.10-src.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/javax.json.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/jollyday.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/xom.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/jollyday-0.4.7-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/stanford-corenlp-3.5.2-models.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/joda-time.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/protobuf.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/stanford-corenlp-3.5.2-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/stanford-corenlp-full-2015-04-20/target/classes/ejml-0.23-src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jbundle/util/osgi/wrapped/org.jbundle.util.osgi.wrapped.org.apache.http.client/4.1.2/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -10,6 +10,7 @@ import edu.stanford.nlp.util.CoreMap;
 
 import java.io.*;
 import java.net.InetSocketAddress;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.Properties;
 
@@ -38,6 +39,8 @@ public class NLPServer {
         System.out.println("starting server");
         HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
         server.createContext("/entry", new entryHandler());
+        server.createContext("/feedback", new feedbackHandler());
+
         server.setExecutor(null); // creates a default executor
         server.start();
     }
@@ -47,13 +50,19 @@ public class NLPServer {
         public void handle(HttpExchange t) throws IOException {
             InputStream is = t.getRequestBody();
 
-            PrintWriter out;
-            out = new PrintWriter(System.out);
+            String newEntry = convertStreamToString(is);
+            annotation = new Annotation(newEntry);
 
-            annotation = new Annotation(convertStreamToString(is));
+            File yourFile = new File("processed_entries.txt");
+            if(!yourFile.exists()) {
+                yourFile.createNewFile();
+            }
+            FileOutputStream oFile = new FileOutputStream(yourFile, true);
+            oFile.write(newEntry.getBytes());
+            oFile.write("\n\n".getBytes());
 
             pipeline.annotate(annotation);
-            pipeline.prettyPrint(annotation, out);
+
             // An Annotation is a Map and you can get and use the various analyses individually.
             // For instance, this gets the parse tree of the first sentence in the text.
             List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
@@ -61,9 +70,7 @@ public class NLPServer {
             if (sentences != null && sentences.size() > 0) {
                 CoreMap sentence = sentences.get(0);
                 Tree tree = sentence.get(TreeCoreAnnotations.TreeAnnotation.class);
-                out.println();
-                out.println("The first sentence parsed is:");
-                tree.pennPrint(out);
+
             }
 
             //XML http response
@@ -73,6 +80,33 @@ public class NLPServer {
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
+            os.close();
+        }
+
+        static String convertStreamToString(java.io.InputStream is) {
+            java.util.Scanner s = new java.util.Scanner(is).useDelimiter("\\A");
+            return s.hasNext() ? s.next() : "";
+        }
+    }
+
+    static class feedbackHandler implements HttpHandler {
+        @Override
+        public void handle(HttpExchange t) throws IOException {
+            InputStream is = t.getRequestBody();
+
+            PrintWriter out = new PrintWriter(System.out);
+
+            File yourFile = new File("feedback.txt");
+            if(!yourFile.exists()) {
+                yourFile.createNewFile();
+            }
+            FileOutputStream oFile = new FileOutputStream(yourFile, true);
+
+            oFile.write(convertStreamToString(is).getBytes());
+            oFile.write("\n\n".getBytes());
+
+            OutputStream os = t.getResponseBody();
+            t.sendResponseHeaders( 200, 0 );
             os.close();
         }
 
